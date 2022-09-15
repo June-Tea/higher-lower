@@ -86,5 +86,6 @@ input[type="text"]:focus {
 }
 
 .results p {
+ margin-top: 10px;
  text-align: center;
 }
