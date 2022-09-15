@@ -39,6 +39,7 @@ function hl(){
             p.innerHTML = "No, try a lower number";
         }
         else if (guess == num) {
+            document.getElementById("guess").disabled= true;
             let s = "You got it!"
             
             if (guesses.length == 1) {
