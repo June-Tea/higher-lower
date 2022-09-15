@@ -40,6 +40,7 @@ function hl(){
         }
         else if (guess == num) {
             document.getElementById("guess").disabled= true;
+            document.getElementById("guess-button").disabled= true;
             let s = "You got it!"
             
             if (guesses.length == 1) {
