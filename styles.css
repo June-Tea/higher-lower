@@ -73,12 +73,27 @@ input[type="text"] {
   transition: .5s;
 }
 
-.guess-row button:hover {
+.guess-row button:hover:not([disabled]) {
   background: #CF4CC9;
   box-shadow: none;
   border: 4px solid #F71C62;
   color: #7D1970;
   cursor: pointer;
+}
+
+.guess-row button:disabled {
+  background: repeating-linear-gradient(
+    45deg,
+    #152b12 0,
+    #152b12 4px,
+    #2449 5px,
+    #2449 9px
+  );
+  color: gray;
+  box-shadow: none;
+  border: 3px dashed gray;
+  cursor: not-allowed;
+  opacity: .75;
 }
 
 input[type="text"]:focus {
